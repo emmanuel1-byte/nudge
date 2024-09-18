@@ -1,0 +1,40 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "typeAI",
+    "collectionId": "a2ec8390-c079-4c31-902e-7445a75e8fcd",
+    "dateExported": "2024-09-18T23:10:43.173Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cb428c62-a532-4da1-ab45-66bf21d6f6bf",
+            "colId": "a2ec8390-c079-4c31-902e-7445a75e8fcd",
+            "containerId": "",
+            "name": "Generate response",
+            "url": "localhost:3000/api/analyze-text",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-18T22:40:52.088Z",
+            "modified": "2024-09-18T22:56:12.868Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\":\"people overrate skill and underrate just showing up every day.Irrespective of how much of a guru you are or can be, it will amount to nothing worthwhile if you don't show up everyday, both in tech and other area of life.\",\n  \"tone\":  \"Annoyed\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7f63d1de-4321-4a7a-8dca-7a6f1b0abafe",
+            "colId": "a2ec8390-c079-4c31-902e-7445a75e8fcd",
+            "containerId": "",
+            "name": "List tones",
+            "url": "localhost:3000/api/tones",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-09-18T22:41:15.405Z",
+            "modified": "2024-09-18T22:41:47.713Z",
+            "headers": []
+        }
+    ],
+    "ref": "j4j8SwGnuiXQ_SqWPVb1kGuwj941639Y1tJ0JRa4tlkkmERi8aM2oDq9NMQDuAhRmzw-NN4aAshzKVR8rfn-pw"
+}
