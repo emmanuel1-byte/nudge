@@ -22,7 +22,7 @@ const limiter = rateLimit({
 
 // Apply the rate limiting middleware to all requests.
 app.use(limiter);
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://nudge-frontend.onrender.com/" }));
 
 app.get("/", (req, res) => {
   res.status(200).json({ message: "API is helathy and running.." });

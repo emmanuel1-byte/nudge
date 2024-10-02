@@ -98,6 +98,11 @@ Here’s a sneak peek at the API I’ve built:
     }
     ```
 
+## Frontend URL
+
+https://nudge-frontend.onrender.com
+
+
 ## 🧩 Contributing
 
 This is a personal project, but if you have suggestions or improvements, here’s how you can contribute:
