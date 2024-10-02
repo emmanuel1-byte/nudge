@@ -1,6 +1,6 @@
 # Nudge Backend 🚀
 
-Welcome to the Nudge Backend repository! 🌟 This is my personal project where a smart reply generator that helps you craft the perfect message with the ideal tone. Let’s explore how you can get involved!
+Welcome to the Nudge Backend repository! 🌟 This is my personal project a smart reply generator that helps you craft the perfect message with the ideal tone. Let’s explore how you can get involved!
 
 ## 🎉 What’s Nudge?
 
@@ -26,8 +26,8 @@ Make sure you have the following installed:
 1. **Clone the Repo:**
 
    ```bash
-   git clone https://github.com/emmanuel1-byte/nudge-backend.git
-   cd nudge-backend
+   git clone https://github.com/emmanuel1-byte/nudge.git
+   cd nudge
    ```
 
 2. **Install Dependencies:**
@@ -40,9 +40,7 @@ Make sure you have the following installed:
 
    - Create a `.env` file in the root directory.
    - Add your configuration details (e.g., API keys):
-     ```plaintext
-     PORT=3000
-     ```
+
 
 4. **Run the Server:**
 
