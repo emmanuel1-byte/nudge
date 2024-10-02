@@ -1,8 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const { rateLimit } = require("express-rate-limit");
-const routeNotFoudHandler = require("./src/middlewares/error");
-const typeAI = require("./src/routes/route");
+const {
+  globalErrorHandler,
+  routeNotFoudHandler,
+} = require("./src/middlewares/error");
+const nudge = require("./src/routes/route");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -25,8 +28,9 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "API is helathy and running.." });
 });
 
-app.use("/api", typeAI);
+app.use("/api", nudge);
 
+app.use(globalErrorHandler);
 app.use(routeNotFoudHandler);
 
 app.listen(PORT, () => {

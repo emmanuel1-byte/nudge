@@ -1,10 +1,10 @@
-# TypeAI Backend 🚀
+# Nudge Backend 🚀
 
-Welcome to the TypeAI Backend repository! 🌟 This is my personal project where I’ve crafted the magic behind TypeAI—a smart keyboard that brings AI-powered responses right to your fingertips. Let’s explore how you can get involved!
+Welcome to the Nudge Backend repository! 🌟 This is my personal project where a smart reply generator that helps you craft the perfect message with the ideal tone. Let’s explore how you can get involved!
 
-## 🎉 What’s TypeAI?
+## 🎉 What’s Nudge?
 
-TypeAI is my next-gen keyboard companion designed to enhance your typing experience. With TypeAI, you can:
+Nudge is a response generator designed to enhance your communication experience. With Nudge, you can:
 
 - **Choose Your Tone:** Supportive, professional, fun, loving—you pick the vibe!
 - **Get Smart Replies:** AI-powered suggestions that match your chosen tone.
@@ -12,7 +12,7 @@ TypeAI is my next-gen keyboard companion designed to enhance your typing experie
 
 ## 🚀 Getting Started
 
-Excited to dive in? Here’s how you can set up TypeAI:
+Excited to dive in? Here’s how you can set up Nudge:
 
 ### 🛠️ Prerequisites
 
@@ -26,8 +26,8 @@ Make sure you have the following installed:
 1. **Clone the Repo:**
 
    ```bash
-   git clone https://github.com/emmanuel1-byte/typeAI.git
-   cd typeai-backend
+   git clone https://github.com/emmanuel1-byte/nudge-backend.git
+   cd nudge-backend
    ```
 
 2. **Install Dependencies:**
@@ -39,7 +39,10 @@ Make sure you have the following installed:
 3. **Set Up Environment Variables:**
 
    - Create a `.env` file in the root directory.
-   - Add your configuration details (e.g., API key).
+   - Add your configuration details (e.g., API keys):
+     ```plaintext
+     PORT=3000
+     ```
 
 4. **Run the Server:**
 
@@ -72,6 +75,7 @@ Here’s a sneak peek at the API I’ve built:
 
 - **`GET /tones`**  
   Get a list of available tones.
+
   - **Response:**
     ```json
     {
@@ -91,8 +95,7 @@ Here’s a sneak peek at the API I’ve built:
         "Neutral",
         "Serious",
         "Empathetic",
-        "Annoyed",
-        "Happy"
+        "Annoyed"
       ]
     }
     ```

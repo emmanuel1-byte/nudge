@@ -2,10 +2,10 @@ const express = require("express");
 const { validateRequestSchema } = require("../middlewares/validation");
 const schema = require("../schema/schema");
 const { generateResponse, listTones } = require("../controllers/controller");
-const typeAI = express.Router();
+const nudge = express.Router();
 
-typeAI.post("/analyze-text", validateRequestSchema(schema), generateResponse);
+nudge.post("/analyze-text", validateRequestSchema(schema), generateResponse);
 
-typeAI.get("/tones", listTones);
+nudge.get("/tones", listTones);
 
-module.exports = typeAI;
+module.exports = nudge;

@@ -2,7 +2,7 @@ const tones = require("../data/tone.json");
 const model = require("../services/gen-ai/gemini");
 const generatePrompt = require("../services/gen-ai/generate-prompt");
 
-async function generateResponse(req, res) {
+async function generateResponse(req, res, next) {
   try {
     const { text, tone } = req.body;
 
@@ -25,9 +25,7 @@ async function generateResponse(req, res) {
       return res.status(200).json({ data: cleanedResponse });
     }
   } catch (err) {
-    return res
-      .status(500)
-      .json({ message: err.message || "Internal Server Error" });
+    next(err);
   }
 }
 

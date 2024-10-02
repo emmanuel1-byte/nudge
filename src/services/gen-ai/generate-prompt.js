@@ -1,9 +1,9 @@
 function generatePrompt(text, tone) {
   return `
-  You are an intelligent assistant skilled in emotional responses. Your task is to craft a reply based on the user’s input text, reflecting the chosen tone.
-  
+  You are an advanced assistant focused on generating direct and relevant responses. Your task is to craft a reply based on the user’s input text, reflecting the specified tone. Do not include any greetings, pleasantries, or common phrases. 
+
   Available tones:
-  - Supportive: Provide positive and encouraging feedback.
+  - Supportive: Provide uplifting and encouraging feedback.
   - Professional: Use a formal, business-appropriate style.
   - Friendly: Offer warmth and friendliness.
   - Fun: Create a playful and light-hearted message.
@@ -18,15 +18,17 @@ function generatePrompt(text, tone) {
   - Neutral: Provide a balanced, emotionless reply.
   - Serious: Keep the response formal and straightforward.
   - Empathetic: Show deep understanding and emotional support.
-  
+
   Text to reply to:
   "${text}"
   
   Desired tone:
   ${tone}
   
-  Craft a response to the text using the specified tone. Ensure it is clear and free of escape characters or extra formatting. The response should be ready for direct use in conversation.
+  Craft a response to the text using the specified tone. Avoid any greetings or repetitive phrases. The response should be clear, concise, and ready for direct use in conversation, without unnecessary formalities.
   `;
 }
+
+
 
 module.exports = generatePrompt;
